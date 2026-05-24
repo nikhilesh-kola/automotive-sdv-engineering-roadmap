@@ -1,0 +1,8 @@
+dtc_code = input("Enter DTC Code: ")
+dtc_description = input("Enter DTC Description: ")
+severity = input("Enter Severity Level: ")
+print("\nDTC Report")
+print("----------------------------")
+print(f"Code: {dtc_code}")
+print(f"Description: {dtc_description}")
+print(f"Severity: {severity}")

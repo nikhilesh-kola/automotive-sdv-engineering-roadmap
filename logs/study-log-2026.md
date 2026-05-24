@@ -102,3 +102,35 @@ Engineering mindset: 4/10
 
 ### Next Focus
 Bridge Day 3: baseline test and reflection.
+---
+
+## 18.05.2026 — Theory 1
+
+### Today's Focus
+Python variables, types, input/output, and script execution.
+
+### Completed
+- Learned variables and data types
+- Learned `str`, `int`, `float`, and `bool`
+- Practiced `input()` and `print()`
+- Practiced type conversion
+- Wrote 10 tiny Python scripts
+- Connected Python basics to automotive diagnostics examples
+
+### Problems Faced
+- Understanding when type conversion is necessary
+- Remembering that `input()` always returns a string
+
+### What I Learned
+- A variable stores a value.
+- Data types give meaning to values.
+- Engineering scripts should use clear variable names and correct units.
+- Python can be used for diagnostic summaries and simple calculations.
+
+### Confidence Level
+Python basics: 3/10  
+Terminal execution: 5/10  
+Engineering consistency: 5/10  
+
+### Next Focus
+C compiler setup and C basics.

@@ -1,0 +1,13 @@
+vehicle_brand = input("Enter your Vehicle Brand: ")
+model_year = int(input("Enter Model Year: "))
+ecu_name = input("Enter ECU Name: ")
+diagnostic_protocol = input("Enter Diagnostic Protocol: ")
+dtc_count = int(input("Enter DTC Count: "))
+
+print("\nDiagnostic Input Summary")
+print("----------------------------")
+print(f"Vehicle: {vehicle_brand}")
+print(f"Model Year: {model_year}")
+print(f"ECU Name: {ecu_name}")
+print(f"Diagnostic Protocol: {diagnostic_protocol}")
+print(f"DTC Count: {dtc_count}")
