@@ -172,3 +172,43 @@ Repository navigation: 7/10
 
 ### Next Focus
 Practical Git workflow and first small repo organization cleanup.
+
+---
+
+## 20.05.2026 — Practical Lab 1
+
+### Today's Focus
+Python CSV vehicle signal analysis.
+
+### Completed
+- Created a small vehicle signal CSV file
+- Read CSV data using Python
+- Used `csv.DictReader`
+- Stored signal values in lists
+- Calculated min, max, and average values
+- Printed a vehicle signal analysis report
+
+### Problems Faced
+- Understood the CSV concept well 
+
+### What I Learned
+- CSV files are text-based tables.
+- Python reads CSV values as strings first.
+- Lists store multiple values in memory.
+- `append()` adds values into a list.
+- `min()`, `max()`, `sum()`, and `len()` are useful for signal analysis.
+- Average is calculated as `sum(values) / len(values)`.
+
+### Memory-Level Understanding
+- A variable name points to a value or object in memory.
+- A list is an object that contains multiple values.
+- CSV values move from disk text into Python memory as list values.
+
+### Confidence Level
+CSV reading: 5/10  
+Lists: 5/10  
+Signal statistics: 8/10  
+Memory-level understanding: 7/10  
+
+### Next Focus
+Create a reusable Python function for repeated signal calculations.
