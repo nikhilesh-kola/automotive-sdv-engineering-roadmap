@@ -1,6 +1,8 @@
 # automotive-sdv-engineering-roadmap
 ## Goal
 
+My 12-month goal is to transition into a role focused on SDV diagnostics, software integration, Python automation, CAN, UDS, DoIP, automotive cybersecurity and secure vehicle communication.
+
 Transition into:
 
 - Automotive SDV Diagnostics Engineering
