@@ -134,3 +134,41 @@ Engineering consistency: 5/10
 
 ### Next Focus
 C compiler setup and C basics.
+
+---
+
+## 19.05.2026 — Theory 2
+
+### Today's Focus
+Git basics: init, status, add, commit, log, branch.
+
+### Completed
+- Learned the difference between Git and GitHub
+- Learned what a repository is
+- Learned `git init`
+- Learned `git status`
+- Learned `git add .`
+- Learned `git commit -m`
+- Learned `git log --oneline`
+- Learned `git branch`
+- Added Git basics note
+- Updated README with 12-month engineering goal
+
+### Problems Faced
+- commit is a saved snapshot and commit message will explain what has changed.
+- message is actually description of that snapshot
+
+### What I Learned
+- Git tracks changes locally.
+- GitHub stores repositories online.
+- A commit is a saved snapshot of staged changes.
+- `git status` should be checked before adding and committing.
+- Clear commit messages help future review.
+
+### Confidence Level
+Git basics: 5/10  
+GitHub workflow: 7/10  
+Repository navigation: 7/10  
+
+### Next Focus
+Practical Git workflow and first small repo organization cleanup.
