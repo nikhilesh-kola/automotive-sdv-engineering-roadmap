@@ -212,3 +212,45 @@ Memory-level understanding: 7/10
 
 ### Next Focus
 Create a reusable Python function for repeated signal calculations.
+
+---
+
+## 21.05.2026 — Practical Lab 2
+
+### Today's Focus
+Add error handling, command-line arguments, and README documentation to the CSV analyzer.
+
+### Completed
+- Learned `sys.argv`
+- Added command-line file input
+- Added error handling with `try` and `except`
+- Added reusable functions
+- Created README for the script
+- Tested successful run
+- Tested missing argument error
+- Tested wrong file path error
+
+### Problems Faced
+- nothing major, my VS Terminal uses "py" command instead of "python"
+- 
+
+### What I Learned
+- Command-line arguments make scripts more flexible.
+- `sys.argv` stores arguments as a list.
+- `try/except` prevents ugly crashes and gives useful messages.
+- Functions reduce repeated code.
+- README files explain how to use a tool.
+
+### Memory-Level Understanding
+- `sys.argv` is a list stored in memory.
+- Function parameters point to the objects passed as arguments.
+- A list passed to a function is not automatically copied.
+
+### Confidence Level
+Command-line arguments: 5/10  
+Error handling: 5/10  
+Functions: 6/10  
+README writing: 5/10  
+
+### Next Focus
+Review, error log, and cheat sheet.
