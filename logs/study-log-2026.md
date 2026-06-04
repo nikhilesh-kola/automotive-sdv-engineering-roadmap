@@ -317,3 +317,46 @@ Memory-level understanding: 5/10
 
 ### Next Focus
 Saturday deep project lab: improve or extend the vehicle signal analyzer.
+
+---
+
+## 23.05.2026 — Deep Project Lab
+
+### Today's Focus
+Create a clean project structure with src, tests, data, docs, example CSV files, and a working parser.
+
+### Completed
+- Created `vehicle_signal_analyzer` project
+- Added `src`, `tests`, `data`, and `docs` folders
+- Added 3 example CSV files
+- Created a working CSV signal parser
+- Used dictionaries to store signal columns
+- Added a simple function test
+- Added project README
+- Added project notes
+
+### Problems Faced
+- All the not yet learned functions and its logics confused me, but I could still read the code
+
+### What I Learned
+- A clean project structure makes code easier to maintain.
+- `src` contains source code.
+- `data` contains input files.
+- `tests` contains checks for code behavior.
+- `docs` contains engineering explanations.
+- A dictionary can store signal names as keys and signal values as lists.
+- A parser converts CSV text data into Python memory objects.
+
+### Memory-Level Understanding
+- A dictionary maps keys to values.
+- In this project, each CSV column name maps to a list of numeric values.
+- Function calls pass object references, not automatic deep copies.
+
+### Confidence Level
+Project structure: 5/10  
+Dictionaries: 4/10  
+CSV parsing: 4/10  
+Testing basics: 4/10  
+
+### Next Focus
+Sunday weekly test and review.
