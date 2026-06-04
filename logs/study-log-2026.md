@@ -254,3 +254,66 @@ README writing: 5/10
 
 ### Next Focus
 Review, error log, and cheat sheet.
+
+---
+
+## 22.05.2026 — Review
+
+### Today's Focus
+Rewrite messy notes into a one-page Python/Git cheat sheet.
+
+### Completed
+- Reviewed Python variables, types, input/output
+- Reviewed lists and memory-level basics
+- Reviewed CSV reading
+- Reviewed functions
+- Reviewed command-line arguments
+- Reviewed error handling
+- Reviewed Git workflow
+- Created one-page Python/Git cheat sheet
+- Wrote 5 open questions
+
+### Five Questions
+1. What exactly happens in memory when I assign one list variable to another?
+Python does not create a new list for b. Instead, both a and b point to the same list object in memory.
+
+2. How does Python know whether a CSV value should be a string, integer, or float?
+Python does not automatically know the correct numeric type when reading CSV data. CSV files are plain text files, so values are read as strings first.
+
+3. What is the difference between a function parameter and an argument?
+A parameter is the variable name written in the function definition.
+def calculate_stats(values):
+    ...
+An argument is the real value passed into the function when calling it.
+calculate_stats(speed_values)    
+
+4. What is the difference between staged changes and committed changes in Git?
+Staged changes are changes prepared for the next commit. Committed changes are changes saved as a snapshot in Git history.
+
+5. How can I make the CSV analyzer automatically analyze all numeric columns?
+the script can read the CSV headers automatically and try to convert each column value to float.
+for column_name in reader.fieldnames:
+    signal_values[column_name] = []
+    for column_name in reader.fieldnames:
+    try:
+        value = float(row[column_name])
+        signal_values[column_name].append(value)
+    except ValueError:
+        pass
+        
+If a column can be converted to a number, analyze it.
+If it contains text, skip it.        
+
+### What I Learned
+- Review is where scattered learning becomes structured knowledge.
+- A cheat sheet helps me quickly recall important patterns.
+- Git commits should capture clean learning milestones.
+
+### Confidence Level
+Python basics: 4/10  
+CSV analysis: 4/10  
+Git workflow: 6/10  
+Memory-level understanding: 5/10  
+
+### Next Focus
+Saturday deep project lab: improve or extend the vehicle signal analyzer.
