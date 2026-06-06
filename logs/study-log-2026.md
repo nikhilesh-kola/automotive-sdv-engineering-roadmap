@@ -360,3 +360,42 @@ Testing basics: 4/10
 
 ### Next Focus
 Sunday weekly test and review.
+
+---
+
+## 24.05.2026 — Weekly Test 1
+
+### Today's Focus
+Weekly test for Python basics, Git workflow, CSV parsing, and memory-level understanding.
+
+### Completed
+- Answered 15 Python/Git questions
+- Completed 20-minute coding task
+- Ran the coding task from terminal
+- Created weekly test file
+- Wrote 150-word reflection
+- Made Git commit from terminal
+
+### Test Result
+Python/Git questions: 12.5/15  
+Coding task: PASS  
+Git commit: PASS  
+
+### Problems Faced
+- Need more practice for remembering Git related definitions
+- Writing scripts from scratch
+
+### What I Learned
+- Tested my knowledge on Git & Python basics
+- Written a script from scratch
+- Running the code, saving and commiting the changes
+
+### Top Weak Areas
+1. Exact definitions of Git related words
+2. writing scripts from scratch
+3. Writing scripts for Reading csv files
+4. Not much practice for error handling scripts
+5. Python functions & dictionaries
+
+### Next Focus
+Week 2: C compiler setup, C basics, memory model, and comparison with Python.
