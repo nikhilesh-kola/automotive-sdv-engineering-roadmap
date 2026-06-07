@@ -399,3 +399,46 @@ Git commit: PASS
 
 ### Next Focus
 Week 2: C compiler setup, C basics, memory model, and comparison with Python.
+
+---
+
+## 25.05.2026 — Theory 1
+
+### Today's Focus
+Lists, tuples, dictionaries, for loops, and while loops using ECU, DTC, and signal examples.
+
+### Completed
+- Practiced lists with ECU names
+- Practiced tuples with one DTC record
+- Practiced dictionaries with DTC descriptions
+- Practiced for loops over lists and dictionaries
+- Practiced signal statistics using a dictionary of lists
+- Practiced while loop retry logic
+
+### Problems Faced
+- Needed to add final failure message after while loop
+- Need more practice with exact loop stopping conditions
+
+### What I Learned
+- Lists are ordered and changeable.
+- Tuples are ordered and fixed.
+- Dictionaries store key-value pairs.
+- for loops process each item in a collection.
+- while loops repeat while a condition remains true.
+- Diagnostic retry logic can be modeled with a while loop.
+
+### Memory-Level Understanding
+- A list variable points to a list object.
+- A dictionary maps keys to values.
+- In a for loop, the loop variable temporarily points to the current item.
+- In a while loop, variables must change so that the condition eventually becomes false.
+
+### Confidence Level
+Lists: 6/10  
+Tuples: 6/10  
+Dictionaries: 6/10  
+for loops: 6/10  
+while loops: 5/10  
+
+### Next Focus
+Practical loop-based diagnostic signal processing.
