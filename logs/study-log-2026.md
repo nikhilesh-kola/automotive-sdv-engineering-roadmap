@@ -442,3 +442,71 @@ while loops: 5/10
 
 ### Next Focus
 Practical loop-based diagnostic signal processing.
+
+---
+
+## 26.05.2026 — Theory 2
+
+### Today's Focus
+Python functions, return values, docstrings, and simple modules.
+
+### Completed
+- Learned why repeated code should become a function
+- Practiced writing functions with parameters
+- Practiced returning values from functions
+- Learned the difference between `return` and `print()`
+- Added simple docstrings to functions
+- Created reusable functions for power calculation, statistics, DTC count, and threshold checks
+- Created a simple module using `signal_utils.py`
+- Imported `calculate_stats()` from another Python file
+
+### Exercises Completed
+- `exercise_01_power_function.py`
+- `exercise_02_stats_function.py`
+- `exercise_03_dtc_count_function.py`
+- `exercise_04_threshold_function.py`
+- `exercise_05_use_module.py`
+- `signal_utils.py`
+
+### Problems Faced
+- In the stats exercise, I used speed variable names for engine temperature values.
+- In the module exercise, I used `kmph`; the better engineering unit notation is `km/h`.
+
+### Corrections Made
+- Changed speed-related variable names to temperature-related names where the data was engine temperature.
+- Changed `kmph` to `km/h`.
+- Improved docstrings to explain the function purpose more clearly.
+
+### What I Learned
+- A function is a reusable block of code.
+- Parameters are names inside the function definition.
+- Arguments are actual values passed during the function call.
+- `return` sends a value back to the program.
+- `print()` only displays a value on the screen.
+- A docstring explains what a function does.
+- A module is a Python file containing reusable code.
+- Reusable logic can be imported from another file.
+
+### Memory-Level Understanding
+- When a function is called, Python maps arguments to parameters.
+- Example: in `calculate_power(12.5, 4.0)`, `voltage` points to `12.5` and `current` points to `4.0` inside the function.
+- When a function returns a value, that returned value can be stored in another variable.
+- Importing from a module makes a function name available in the current script.
+- Function parameters can point to the same list object that was passed as an argument.
+
+### Engineering Rule Learned
+Correct code runs, but good engineering code also tells the truth through names.
+
+Repeated code should become a function.  
+Reusable functions should move into a module.  
+Variable names must match the real meaning of the data.
+
+### Confidence Level
+Functions: 5/10  
+Return values: 5/10  
+Docstrings: 6/10  
+Modules/imports: 6/10  
+Memory-level understanding: 6/10  
+
+### Next Focus
+Practical lab: refactor the vehicle signal analyzer using reusable functions and modules.
