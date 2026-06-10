@@ -510,3 +510,64 @@ Memory-level understanding: 6/10
 
 ### Next Focus
 Practical lab: refactor the vehicle signal analyzer using reusable functions and modules.
+
+---
+
+## 27.05.2026 — Practical Lab 1
+
+### Today's Focus
+Parse a CSV file with timestamp, CAN ID, DLC, and payload. Count messages per CAN ID.
+
+### Completed
+- Created `projects/python_day_06/`
+- Created a warm-up script to count repeated CAN IDs from a list
+- Created `can_log.csv` with timestamp, CAN ID, DLC, and payload columns
+- Created `can_message_counter.py`
+- Used `csv.DictReader` to read CSV rows as dictionaries
+- Extracted `can_id` from each row
+- Counted messages per CAN ID using a dictionary
+- Printed a clean CAN message count report
+
+### Files Created
+- `projects/python_day_06/exercise_01_count_list.py`
+- `projects/python_day_06/can_log.csv`
+- `projects/python_day_06/can_message_counter.py`
+- `notes/python-can-csv-message-counts.md`
+
+### Output
+```text
+CAN Message Count Report
+------------------------
+0x100: 3 messages
+0x200: 2 messages
+0x300: 2 messages
+0x400: 1 message
+
+Problems Faced
+- Initially needed step-by-step guidance again.
+- Need to keep daily work aligned exactly with the PDF plan.
+
+What I Learned
+- A CAN log can be represented as a CSV file.
+- Each CSV row can represent one CAN message.
+- csv.DictReader converts each row into a dictionary.
+- A dictionary can be used to count repeated CAN IDs.
+- Counting CAN IDs is an early form of CAN trace analysis.
+
+Memory-Level Understanding
+- Each CSV row is read as a dictionary.
+- row["can_id"] extracts the CAN ID from the current row.
+- message_counts stores each CAN ID as a key and its message count as a value.
+- Each time a CAN ID appears, its count increases by 1.
+
+
+Confidence Level
+
+CSV reading: 5/10
+Dictionaries: 5/10
+Counting logic: 6/10
+CAN log understanding: 6/10
+
+Next Focus
+
+Practical Lab 2: build a function that filters records by CAN ID and exports the filtered data to a new CSV.
