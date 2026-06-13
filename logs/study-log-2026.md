@@ -571,3 +571,73 @@ CAN log understanding: 6/10
 Next Focus
 
 Practical Lab 2: build a function that filters records by CAN ID and exports the filtered data to a new CSV.
+
+---
+
+## 28.05.2026 — Practical Lab 2
+
+### Today's Focus
+Build a function that filters CAN records by CAN ID and exports the filtered records to a new CSV file.
+
+### Completed
+- Created `exercise_02_filter_list.py`
+- Practiced filtering a list of CAN record dictionaries
+- Created `can_id_filter.py`
+- Built `filter_records_by_can_id()`
+- Built `write_records_to_csv()`
+- Filtered records for CAN ID `0x100`
+- Exported filtered records to `can_log_0x100.csv`
+- Modified the script to filter CAN ID `0x300`
+- Exported filtered records to `can_log_0x300.csv`
+
+### Files Created
+- `projects/python_day_06/exercise_02_filter_list.py`
+- `projects/python_day_06/can_id_filter.py`
+- `projects/python_day_06/can_log_0x100.csv`
+- `projects/python_day_06/can_log_0x300.csv`
+- `notes/python-can-id-filter-export.md`
+
+### Output for 0x100
+```text
+CAN ID Filter Report
+--------------------
+Input file: projects/python_day_06/can_log.csv
+Target CAN ID: 0x100
+Filtered records: 3
+Output file: projects/python_day_06/can_log_0x100.csv
+
+CAN ID Filter Report
+--------------------
+Input file: projects/python_day_06/can_log.csv
+Target CAN ID: 0x300
+Filtered records: 2
+Output file: projects/python_day_06/can_log_0x300.csv
+
+Problems Faced
+I copied the guided code first, then modified the target CAN ID and output file to confirm understanding.
+
+What I Learned
+- csv.DictReader reads CSV rows as dictionaries.
+- csv.DictWriter writes dictionaries into a CSV file.
+- A list can store multiple matching CAN records.
+- A function can make filtering logic reusable.
+- Changing target_can_id allows the same function to filter a different CAN ID.
+
+Memory-Level Understanding
+- One CSV row becomes one dictionary.
+- Multiple filtered rows become a list of dictionaries.
+- filtered_records.append(row) stores the matching row in the list.
+- The output CSV is created from the dictionaries stored in filtered_records.
+
+
+Confidence Level
+
+CSV filtering: 5/10
+Functions: 5/10
+DictReader/DictWriter: 5/10
+List of dictionaries: 6/10
+CAN log understanding: 6/10
+
+Next Focus
+
+Review: create flashcards for Python data structures and write a short note on where dictionaries help in diagnostics.
