@@ -641,3 +641,64 @@ CAN log understanding: 6/10
 Next Focus
 
 Review: create flashcards for Python data structures and write a short note on where dictionaries help in diagnostics.
+
+---
+
+## 29.05.2026 — Review
+
+### Today's Focus
+Create flashcards for Python data structures and write a short note on where dictionaries help in diagnostics.
+
+### Completed
+- Created Python data structure flashcards
+- Reviewed lists, tuples, dictionaries, for loops, while loops, functions, modules, and CSV handling
+- Created a short note explaining where dictionaries help in automotive diagnostics
+- Reviewed dictionary counting pattern for CAN message counts
+- Reviewed list of dictionaries for filtered CAN records
+
+### Files Created
+- `notes/flashcards/python-data-structures-flashcards.md`
+- `notes/dictionaries-in-diagnostics.md`
+
+### What I Reviewed
+- Lists are ordered and changeable.
+- Tuples are ordered and fixed.
+- Dictionaries store key-value pairs.
+- A `for` loop processes each item in a collection.
+- A `while` loop repeats while a condition is true.
+- Functions make repeated code reusable.
+- Modules store reusable functions in separate Python files.
+- `csv.DictReader` reads CSV rows as dictionaries.
+- `csv.DictWriter` writes dictionaries to CSV files.
+
+### What I Learned
+- Dictionaries make diagnostic data easier to understand because each value has a meaningful key.
+- A dictionary can represent one CAN message row.
+- A list of dictionaries can represent many CAN message rows.
+- A dictionary can count repeated CAN IDs.
+- Dictionaries are useful for DTC descriptions, ECU statuses, CAN message counts, and signal values.
+
+### Memory-Level Understanding
+- A list stores values by position.
+- A tuple stores fixed values by position.
+- A dictionary stores values by key.
+- In CAN log parsing, one CSV row becomes one dictionary.
+- Multiple rows become a list of dictionaries.
+- CAN ID counts are stored as key-value pairs.
+
+### Problems Faced
+- Need more repetition to remember syntax without looking.
+- Need to practice explaining dictionaries in my own words.
+
+### Confidence Level
+Lists: 5/10  
+Tuples: 5/10  
+Dictionaries: 6/10  
+for loops: 6/10  
+while loops: 5/10  
+Functions: 5/10  
+CSV DictReader/DictWriter: 5/10  
+Git workflow: 7/10  
+
+### Next Focus
+Deep project lab: build v1 of a diagnostic-log summarizer that prints message counts, first/last timestamp, and top 5 active IDs.
