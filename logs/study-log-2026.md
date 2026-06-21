@@ -702,3 +702,87 @@ Git workflow: 7/10
 
 ### Next Focus
 Deep project lab: build v1 of a diagnostic-log summarizer that prints message counts, first/last timestamp, and top 5 active IDs.
+
+---
+
+## 30.05.2026 — Deep Project Lab
+
+### Today's Focus
+Build v1 of a diagnostic-log summarizer that prints message counts, first/last timestamp, and top active CAN IDs.
+
+### Completed
+- Created `exercise_03_first_last_timestamp.py`
+- Practiced first and last list item access using `[0]` and `[-1]`
+- Created `diagnostic_log_summarizer.py`
+- Built `read_can_log()`
+- Built `count_messages_by_can_id()`
+- Built `get_first_timestamp()`
+- Built `get_last_timestamp()`
+- Built `get_top_active_ids()`
+- Built `print_summary()`
+- Printed total messages, first timestamp, last timestamp, CAN ID counts, and top active IDs
+- Created README for Python Day 06
+- Created diagnostic log summarizer project note
+
+### Files Created or Updated
+- `projects/python_day_06/exercise_03_first_last_timestamp.py`
+- `projects/python_day_06/diagnostic_log_summarizer.py`
+- `projects/python_day_06/README.md`
+- `notes/diagnostic-log-summarizer-v1.md`
+
+### Output
+```text
+Diagnostic Log Summary
+----------------------
+Input file: projects/python_day_06/can_log.csv
+Total messages: 8
+First timestamp: 0.000
+Last timestamp: 0.070
+
+Message Counts per CAN ID
+-------------------------
+0x100: 3 messages
+0x200: 2 messages
+0x300: 2 messages
+0x400: 1 message
+
+Top Active CAN IDs
+------------------
+1. 0x100 - 3 messages
+2. 0x200 - 2 messages
+3. 0x300 - 2 messages
+4. 0x400 - 1 message
+
+What I Learned
+- A diagnostic log can be represented as a list of dictionaries.
+- Each CAN row is one dictionary.
+- records[0] gives the first record.
+- records[-1] gives the last record.
+- A dictionary can count CAN IDs.
+- sorted() can order CAN IDs by message count.
+- A summarizer gives quick high-level insight into a CAN trace.
+
+Memory-Level Understanding
+- records points to a list containing all CAN message dictionaries.
+- Each dictionary contains timestamp, CAN ID, DLC, and payload.
+- message_counts maps CAN IDs to how often they appear.
+- get_top_active_ids() sorts CAN ID/count pairs by count.
+- limit controls how many active IDs are returned.
+
+Problems Faced
+- The first version was guided, so I need to practice modifying it independently.
+- sorted() with lambda is still new and needs more repetition.
+
+Confidence Level
+
+CSV parsing: 5/10
+Functions: 5/10
+Lists of dictionaries: 6/10
+Message counting: __/10
+First/last timestamp logic: 6/10
+Sorting with lambda: 5/10
+CAN log understanding: 6/10
+
+Next Focus
+
+Sunday weekly test: data-structure questions, parser bug-fix task, 5-minute code explanation, and commit.
