@@ -786,3 +786,42 @@ CAN log understanding: 6/10
 Next Focus
 
 Sunday weekly test: data-structure questions, parser bug-fix task, 5-minute code explanation, and commit.
+
+Weekly test is also done
+
+---
+
+## Week 3 · Monday — Theory 1
+
+### Today's Focus
+Exceptions, assert statements, and why tests matter (Python quality).
+
+### Completed
+Read pytest getting-started (first section). Wrote and ran 3 exercises:
+exceptions, assert, and a manual test function.
+
+### Files Created
+projects/python_day_07/exercise_01_exception_example.py
+projects/python_day_07/exercise_02_assert_example.py
+projects/python_day_07/exercise_03_test_function_manual.py
+
+### What I Learned
+- Exceptions handle expected bad input (catch specific ones, never a catch-all).
+- raise is for when MY rule is broken (e.g. CAN frame not 8 bytes).
+- assert catches MY logic errors; it can be disabled, so it's not for input validation.
+- A test is a known input checked against an expected output.
+
+### Memory-Level Understanding
+except ValueError = only catch bad-value errors (safe)
+except Exception  = catch everything (hides bugs)
+assert            = must-be-true check on my own logic
+test              = input X -> expected Y, verified
+
+### Problems Faced
+None — the assert crash in exercise 2 was intentional and understood.
+
+### Confidence Level
+Exceptions try/except: 8/10
+raise your own error: 7/10
+assert vs exception: 7/10
+why tests matter: 8/10
