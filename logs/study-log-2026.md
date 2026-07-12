@@ -861,3 +861,39 @@ print vs logging: 7/10
 log levels + threshold: 8/10
 writing good error messages: 7/10
 debugging mindset: 7/10
+
+---
+
+## Week 3 · Wednesday — Practical Lab 1
+
+### Today's Focus
+pytest tests for the CAN log parser: valid, empty, bad payload, unknown ID.
+
+### Completed
+Installed pytest (via `py`), fixed a "0 items collected" (unsaved file),
+wrote a parser + 6 passing tests, added a 5th known CAN ID with its own test.
+
+### Files Created
+projects/python_day_09/can_parser.py
+projects/python_day_09/test_can_parser.py
+projects/python_day_09/test_warmup.py
+projects/python_day_09/data/can_log_valid.csv
+projects/python_day_09/data/can_log_empty.csv
+projects/python_day_09/data/can_log_bad_payload.csv
+notes/python-pytest-can-parser.md
+
+### What I Learned
+- Use `py`, not `python`, on this machine.
+- Save before running — pytest reads from disk.
+- pytest.raises: the expected error IS the pass.
+- Parser holds the rule; test proves it fires.
+- Test names should describe behaviour, not when they were written.
+
+### Problems Faced
+"collected 0 items" from an unsaved file; solved by reading timestamps. I actually did not save the file, so it technically has no data in it until I save. So instead of guessing, I checked, saved the file and then re-running it has worked.
+
+### Confidence Level
+Writing a pytest test: 6/10
+pytest.raises for expected errors: 6/10
+Reading a test result / failure: 6/10
+Save-before-run discipline: 8/10
