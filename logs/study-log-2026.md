@@ -825,3 +825,39 @@ Exceptions try/except: 8/10
 raise your own error: 7/10
 assert vs exception: 7/10
 why tests matter: 8/10
+
+---
+
+## Week 3 · Tuesday — Theory 2
+
+### Today's Focus
+Logging vs print, error messages, and the debugging mindset.
+
+### Completed
+Read Python logging tutorial (first two sections). Wrote and ran 2 exercises:
+the five log levels with a threshold, and a CAN parser that logs its behaviour.
+
+### Files Created
+projects/python_day_08/exercise_01_logging_levels.py
+projects/python_day_08/exercise_02_parser_with_logging.py
+
+### What I Learned
+- print = show the user a result; logging = the program narrating itself.
+- Levels: DEBUG < INFO < WARNING < ERROR < CRITICAL; set one threshold, below it goes silent.
+- Never delete debug lines - just lower/raise the threshold dial.
+- Good error message = what + where + expected vs actual.
+- Hex in source (0x11) is stored as a plain int (17); hex is only notation.
+
+### Memory-Level Understanding
+threshold = the dial; below it is silenced
+argument outside -> parameter inside; return -> stored in outer variable
+result = None -> "if result is not None" refuses to append -> frame skipped
+
+### Problems Faced
+None.
+
+### Confidence Level
+print vs logging: 7/10
+log levels + threshold: 8/10
+writing good error messages: 7/10
+debugging mindset: 7/10
