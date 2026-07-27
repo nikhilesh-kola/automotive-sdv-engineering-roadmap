@@ -5,6 +5,9 @@ import csv
 KNOWN_CAN_IDS = {"0x100", "0x200", "0x300", "0x400"}
 
 
+EXPECTED_PAYLOAD_BYTES = 8
+
+
 def parse_can_log(path):
     """Read a CAN log CSV and return a list of frame dictionaries.
 
@@ -15,9 +18,10 @@ def parse_can_log(path):
         reader = csv.DictReader(file_handle)
         for line_number, row in enumerate(reader, start=1):
             payload_bytes = row["payload"].split()
-            if len(payload_bytes) != 8:
+            if len(payload_bytes) != EXPECTED_PAYLOAD_BYTES:
                 raise ValueError(
-                    f"Line {line_number}: payload has {len(payload_bytes)} bytes, expected 8"
+                    f"Line {line_number}: payload has {len(payload_bytes)} bytes, "
+                    f"expected {EXPECTED_PAYLOAD_BYTES}"
                 )
             frames.append(row)
     return frames

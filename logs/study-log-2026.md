@@ -897,3 +897,35 @@ Writing a pytest test: 6/10
 pytest.raises for expected errors: 6/10
 Reading a test result / failure: 6/10
 Save-before-run discipline: 8/10
+
+---
+
+## Week 3 · Thursday — Practical Lab 2
+
+### Today's Focus
+Break the parser on purpose, read the failure, fix it, document in CHANGELOG.
+
+### Completed
+Broke the length check (8->7), predicted the failure correctly, read the
+pytest failure block, found a code/message drift bug, fixed it with a single
+constant EXPECTED_PAYLOAD_BYTES, returned to 6 passed.
+
+### Files Created or Updated
+projects/python_day_09/can_parser.py (constant added)
+projects/python_day_09/CHANGELOG.md
+notes/python-parser-break-fix.md
+
+### What I Learned
+- Predict, then verify — my prediction matched the failure.
+- A passing test only guards its specific check (the length-check test passed even while broken).
+- Code and error messages must share one source of truth, or they drift and lie.
+
+### Problems Faced
+Confusing "expected 8, got 8" message caused by a hardcoded 8 in the text
+while the rule checked 7.
+
+### Confidence Level
+Reading a pytest failure block: 6/10
+Predict-then-verify debugging: 6/10
+Why a passing test isn't full proof: 6/10
+Single-source-of-truth for constants: 6/10
