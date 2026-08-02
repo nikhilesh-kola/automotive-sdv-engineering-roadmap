@@ -23,7 +23,7 @@ phantom fault. The message is the diagnosis; a wrong diagnosis wastes more
 time than no message. Keeping the rule and its message in one source prevents this.
 
 ## What I Understood Well
-How to test the code by wantedly making the tests fail. 
+The message was misleading because the rule was changed to require 7 bytes but the message text still hardcoded "expected 8"; so when an 8-byte payload was correctly rejected, the message read "has 8, expected 8" — making a reader think the values matched and no error should exist, when in fact the code was rejecting them against the hidden rule of 7.
 
 ## What Confused Me
 Need to also focus on the error messages when wanting to test. For testing I changed the length of expected payload to 7 but forgot to update this number in the error message.

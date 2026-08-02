@@ -929,3 +929,33 @@ Reading a pytest failure block: 6/10
 Predict-then-verify debugging: 6/10
 Why a passing test isn't full proof: 6/10
 Single-source-of-truth for constants: 6/10
+
+---
+
+## Week 3 · Friday — Review
+
+### Today's Focus
+Build a reusable test-design checklist: normal, empty, edge/boundary, error.
+
+### Completed
+Created a four-category test checklist and applied it to this week's parser,
+which exposed a real gap: I never tested the boundary (7 or 9 bytes), only
+"way too short" and "correct".
+
+### Files Created
+notes/flashcards/test-design-checklist.md
+notes/test-design-thinking.md
+
+### What I Learned
+- Four categories every time: normal, empty, edge/boundary, error.
+- A checklist turns "what should I test?" into "what's the edge case here?".
+- I missed the boundary case this week — off-by-one bugs live exactly there.
+- Precise wording matters: "missing test categories", not "missing errors".
+
+### Problems Faced
+None — consolidation day.
+
+### Confidence Level
+Knowing the four test categories: 7/10
+Spotting the boundary/edge case: 7/10
+Explaining test design in my own words: 7/10
