@@ -35,3 +35,26 @@ def test_unknown_can_id():
 
 def test_known_can_id_0x400():
     assert is_known_can_id("0x400") is True
+
+def test_seven_byte_payload_raises():
+    """Boundary: one byte short must be rejected."""
+    with pytest.raises(ValueError):
+        parse_can_log(os.path.join(DATA_DIR, "can_log_seven_bytes.csv"))
+
+
+def test_nine_byte_payload_raises():
+    """Boundary: one byte over must be rejected."""
+    with pytest.raises(ValueError):
+        parse_can_log(os.path.join(DATA_DIR, "can_log_nine_bytes.csv"))
+
+def test_error_message_reports_actual_byte_count():
+    """The raised message must state the real byte count, not a hardcoded number."""
+    with pytest.raises(ValueError) as exception_info:
+        parse_can_log(os.path.join(DATA_DIR, "can_log_seven_bytes.csv"))
+    message = str(exception_info.value)
+    assert "7" in message          # it must report the ACTUAL count (7)
+    assert "expected 8" in message  # and the expected count
+
+def test_single_row_log_returns_one_frame():
+    frames = parse_can_log(os.path.join(DATA_DIR, "can_log_valid_1_row.csv"))
+    assert len(frames) == 1
