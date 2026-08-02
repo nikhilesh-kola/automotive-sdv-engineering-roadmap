@@ -959,3 +959,38 @@ None — consolidation day.
 Knowing the four test categories: 7/10
 Spotting the boundary/edge case: 7/10
 Explaining test design in my own words: 7/10
+
+---
+
+## Week 3 · Saturday — Deep Project Lab
+
+### Today's Focus
+Grow the CAN parser suite to 10 meaningful tests using the Friday checklist.
+
+### Completed
+Audited existing tests against the four categories, found and filled the
+boundary gap (7 and 9 bytes), added an error-message-content test, and a
+one-row minimum-input test with a correct 8-byte fixture. 10 passed.
+
+### Files Created or Updated
+projects/python_day_09/test_can_parser.py
+projects/python_day_09/data/can_log_seven_bytes.csv
+projects/python_day_09/data/can_log_nine_bytes.csv
+projects/python_day_09/data/can_log_valid_1_row.csv
+projects/python_day_09/README.md
+notes/can-parser-test-suite-v1.md
+
+### What I Learned
+- A test suite is judged by category coverage, not test count.
+- Boundary tests catch off-by-one; I'd missed them until the checklist.
+- Building correct test data is its own skill (counted bytes to be sure).
+- Inspecting the exception message tests HOW it failed, not just THAT it did.
+
+### Problems Faced
+None — chose the harder modification (new fixture) and got the byte count right.
+
+### Confidence Level
+Boundary testing: 7/10
+Inspecting exception messages: 7/10
+Building correct test fixtures: 8/10
+Designing a suite by category: 7/10
