@@ -994,3 +994,33 @@ Boundary testing: 7/10
 Inspecting exception messages: 7/10
 Building correct test fixtures: 8/10
 Designing a suite by category: 7/10
+
+---
+
+## Week 4 · Monday — Theory 1 (+ Week 3 repair)
+
+### Today's Focus
+Linux filesystem, paths, and core commands: ls, cd, mkdir, cp, mv, rm, cat, more, Select-String.
+
+### Completed
+Repair block: rewrote check_dlc from scratch (fixed the inverted range check
+and grafted-variable habits from the Week 3 test). Then: navigated the repo
+tree, practiced cp/mv/rm in a sandbox, searched a file with Select-String.
+
+### What I Learned
+- Filesystem is a tree; paths are absolute (from root) or relative (from here).
+- . = here, .. = up one level; cd needs a space (cd ..\.. not cd..\..).
+- cp keeps the original, mv replaces it, rm deletes permanently (no recycle bin).
+- Select-String (grep) finds every matching line with line numbers - the key log-hunting tool.
+- When a path "doesn't exist", run pwd first - usually I'm in the wrong folder.
+- Text files have an encoding; a mismatch turns special chars into garbage (â?").
+
+### Problems Faced
+Overshot with cd ..\.. from the sandbox (one level too high) and hit a
+"path not found". Diagnosed it with pwd, recovered with an absolute path.
+
+### Confidence Level
+Absolute vs relative paths: 7/10
+cp / mv / rm distinction: 7/10
+Select-String / grep for searching: 7/10
+Recovering with pwd when lost: 7/10
