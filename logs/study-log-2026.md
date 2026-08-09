@@ -1052,3 +1052,36 @@ What PATH is and how lookup works: 7/10
 Why py works and python didn't: 7/10
 What a venv is for: 6/10
 pip / packages: 6/10
+
+---
+
+## Week 4 · Wednesday — Practical Lab 1
+
+### Today's Focus
+Create and use a virtual environment; install pytest inside it; run tests under it.
+
+### Completed
+Created .venv in python_day_10, fixed the execution-policy block with the
+narrowest scope (RemoteSigned/CurrentUser), activated it, confirmed it started
+empty, installed pytest into it, ran the Week 3 suite (10 passed) using the
+venv's own python.exe. Verified .venv is gitignored.
+
+### Files Created or Updated
+projects/python_day_10/.venv/ (NOT committed - gitignored)
+notes/python-virtual-environments.md
+
+### What I Learned
+- A venv starts empty and isolated - global pytest was invisible inside it.
+- Activation = putting the venv at the front of PATH (ties to Tuesday).
+- pytest showed .venv\Scripts\python.exe - one pinned Python, ending the 3.9/3.14 confusion.
+- Security errors: check first, then apply the narrowest fix (least privilege).
+
+### Problems Faced
+Activation blocked by execution policy; fixed with Set-ExecutionPolicy
+RemoteSigned scoped to CurrentUser only.
+
+### Confidence Level
+Creating/activating a venv: 8/10
+Understanding venv isolation: 7/10
+Why activation works (PATH): 7/10
+Handling the execution-policy fix safely: 7/10
