@@ -1024,3 +1024,31 @@ Absolute vs relative paths: 7/10
 cp / mv / rm distinction: 7/10
 Select-String / grep for searching: 7/10
 Recovering with pwd when lost: 7/10
+
+---
+
+## Week 4 · Tuesday — Theory 2
+
+### Today's Focus
+Environment variables, PATH, pip/packages, virtual environments, permissions.
+
+### Completed
+Inspected $env:USERNAME, $env:TEMP, and the full PATH. Listed installed
+packages with pip. Explained the Week 3 python-vs-py mystery via PATH.
+
+### What I Learned
+- Environment variable = named value the system reads ($env:NAME).
+- PATH = ordered folder list; first match wins when I type a command.
+- py -m X is bulletproof: runs through real Python, ignores PATH quirks.
+- A venv is a private package folder per project, so dependency versions never collide.
+- Real machines are messy: I have Python 3.9 on PATH but run 3.14 via py, and
+  the Store alias can jump PATH order - the tidy "first match wins" rule has exceptions.
+
+### Problems Faced
+None - but discovered my machine has multiple Pythons; py avoids the confusion.
+
+### Confidence Level
+What PATH is and how lookup works: 7/10
+Why py works and python didn't: 7/10
+What a venv is for: 6/10
+pip / packages: 6/10
