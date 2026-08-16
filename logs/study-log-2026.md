@@ -1121,3 +1121,32 @@ The pipe and chaining tools: 6/10
 cut / sort / uniq -c / sort -rn: 6/10
 grep and grep -v: 7/10
 Working in Git Bash (paths, /c/): 6/10
+
+---
+
+## Week 4 · Friday — Review
+
+### Today's Focus
+Build a task-organized Linux cheat sheet for diagnostic logs; consolidate the week.
+
+### Completed
+Wrote a 20+ command cheat sheet organized by task, and a review note with
+active recall. Corrected two conceptual gaps: what the Store alias actually was
+(a fake executable that jumped PATH order, not an empty folder), and that a
+venv isolates PACKAGES via PATH-prepending, not environment variables broadly.
+
+### Files Created or Updated
+notes/linux-diagnostic-cheatsheet.md
+notes/week4-linux-review.md
+
+### What I Learned
+- sort ORDERS lines (grouping is a side effect); that's why it must precede uniq -c.
+- The python-vs-py cause was an alias jumping PATH order, not an empty folder.
+- A venv isolates packages; activation prepends it to PATH so its tools win.
+- Cheat sheets organized by TASK are usable under pressure.
+
+### Confidence Level
+Recalling command meanings: 6/10
+The diagnostic pipeline power move: 6/10
+Why python failed / how venv works (precise): 6/10
+Organizing knowledge into a reference: 6/10
