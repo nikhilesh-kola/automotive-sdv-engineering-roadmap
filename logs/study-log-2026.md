@@ -1085,3 +1085,39 @@ Creating/activating a venv: 8/10
 Understanding venv isolation: 7/10
 Why activation works (PATH): 7/10
 Handling the execution-policy fix safely: 7/10
+---
+
+## Week 4 · Thursday — Practical Lab 2
+
+### Today's Focus
+Inspect a CAN log with grep, cut, sort, uniq, wc in Git Bash (real Linux tools).
+
+### Completed
+Set up Git Bash, created a sample CAN log, and built the classic pipeline to
+rank CAN IDs by frequency without Python. Wrote an independent command to count
+data rows. Found 0x100 = 5 occurrences (tool beat my eyeball count of 4).
+
+### Files Created or Updated
+projects/python_day_11/can_log.csv
+notes/linux-log-inspection.md
+
+### What I Learned
+- The pipe | chains small single-purpose tools into powerful analysis.
+- sort BEFORE uniq -c, because uniq only collapses adjacent duplicates.
+- sort -rn ranks by count, biggest first.
+- grep -v inverts the match (used to drop the header line).
+- Trust the tool over the hand-count - my eyeball said 4, the truth was 5.
+- understood and practised all the mentioned linux commands
+- Also got to know the logic behind every command, to use them efficiently
+
+### Problems Faced
+Finding the pipe key on a Windows/German layout; solved (Shift+\).
+- i did not know which key on windows laptop does that, finally learned it is with shift + \
+- for wc command the "-l" looks like -1, I thought it is minus 1, but it is actually minus letter l
+
+
+### Confidence Level
+The pipe and chaining tools: 6/10
+cut / sort / uniq -c / sort -rn: 6/10
+grep and grep -v: 7/10
+Working in Git Bash (paths, /c/): 6/10
