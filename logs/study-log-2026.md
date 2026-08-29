@@ -1150,3 +1150,36 @@ Recalling command meanings: 6/10
 The diagnostic pipeline power move: 6/10
 Why python failed / how venv works (precise): 6/10
 Organizing knowledge into a reference: 6/10
+
+---
+
+## Week 4 · Saturday — Deep Project Lab
+
+### Today's Focus
+Write a shell script that runs the test suite and saves timestamped reports.
+
+### Completed
+Built run_tests.sh: runs pytest, saves a timestamped report via tee, and
+appends a run summary to history.txt. Practiced shebang, chmod +x, ./ execution,
+$(...) capture, and proved >> appends (two timestamped history lines).
+
+### Files Created or Updated
+projects/python_day_12/run_tests.sh
+projects/python_day_12/hello.sh
+projects/python_day_12/README.md
+notes/bash-test-runner-script.md
+
+### What I Learned
+- A script is just saved, sequenced commands - automation is composition.
+- chmod +x grants execute permission; scripts won't run without it (Tue's theory, live).
+- ./script.sh runs a script in the current folder (not on PATH).
+- tee shows AND saves output; >> appends, > overwrites.
+
+### Problems Faced
+Verified the script and append behaviour carefully rather than assuming green.
+
+### Confidence Level
+Writing/running a shell script: 6/10
+chmod +x and permissions: 6/10
+tee and > vs >>: 6/10
+Automating a repeatable task: 6/10
