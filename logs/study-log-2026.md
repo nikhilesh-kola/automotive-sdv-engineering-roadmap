@@ -1183,3 +1183,38 @@ Writing/running a shell script: 6/10
 chmod +x and permissions: 6/10
 tee and > vs >>: 6/10
 Automating a repeatable task: 6/10
+
+---
+
+## Week 5 · Monday — Theory 1 (C setup + 5 programs)
+
+### Today's Focus
+Install C toolchain; compile/run; variables, data types, printf, scanf, integer sizes.
+
+### Completed
+Installed MSYS2 GCC 16.2.0 and put it on PATH for Git Bash. Wrote, compiled,
+and ran 5 tiny programs: hello, signals, read_speed (scanf), int_sizes, data_types.
+
+### Files Created
+projects/c_day_01/hello.c
+projects/c_day_01/signals.c
+projects/c_day_01/read_speed.c
+projects/c_day_01/int_sizes.c
+projects/c_day_01/data_types.c
+
+### What I Learned
+- C is compiled (gcc -> .exe machine code, run by the CPU); Python is interpreted.
+- printf sends a value OUT (no &); scanf reads a value IN and needs &var (its address).
+- sizeof gives a type's size in bytes; on my machine long is 4 bytes (varies by platform!).
+- stdint.h types (uint8_t=1, uint16_t=2, uint32_t=4) are the SAME size everywhere -
+  that's why automotive/CAN code uses them, not int/long.
+- %d int, %.1f float, %c char; 'D' is a char, "D" is a string.
+
+### Problems Faced
+Bracketed-paste corrupted a heredoc; switched to editing files in VS Code.
+
+### Confidence Level
+Compile/run workflow: 6/10
+printf vs scanf (and why & ): 7/10
+integer sizes / stdint.h: 6/10
+data types and format specifiers: 6/10
