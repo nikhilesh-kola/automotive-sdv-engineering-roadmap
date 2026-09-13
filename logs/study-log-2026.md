@@ -1218,3 +1218,34 @@ Compile/run workflow: 6/10
 printf vs scanf (and why & ): 7/10
 integer sizes / stdint.h: 6/10
 data types and format specifiers: 6/10
+
+---
+
+## Week 5 · Tuesday — Theory 2
+
+### Today's Focus
+Arrays, loops, functions in C; a CAN payload IS an array (uint8_t data[8]).
+
+### Completed
+Wrote payload_print.c (loop over an 8-byte payload, print hex+decimal) and
+decode_temp.c (a function decoding each byte of an array via a for loop).
+
+### Files Created
+projects/c_day_02/payload_print.c
+projects/c_day_02/decode_temp.c
+
+### What I Learned
+- A CAN payload is literally uint8_t payload[8]; indices run 0..7.
+- C does NOT bounds-check arrays - staying in range (i < 8, not <= 8) is my job.
+- for (i=0; i<8; i++) = start / condition / step.
+- C functions declare types for parameters AND return value.
+- Hex and decimal are the same number in different bases: 0x11 = 1*16 + 1 = 17.
+  One byte = two hex digits (0x00..0xFF) - why CAN uses hex.
+- %3d = integer padded with spaces to width 3 (aligns columns);
+  %02X = hex padded with zeros to width 2 (byte display).
+
+### Confidence Level
+Arrays / CAN payload as array: 6/10
+for loops (start/condition/step): 6/10
+C functions with types: 6/10
+hex vs decimal conversion: 6/10
