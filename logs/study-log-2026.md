@@ -1249,3 +1249,37 @@ Arrays / CAN payload as array: 6/10
 for loops (start/condition/step): 6/10
 C functions with types: 6/10
 hex vs decimal conversion: 6/10
+
+---
+
+## Week 5 · Wednesday — Practical Lab 1
+
+### Today's Focus
+C program printing an 8-byte payload in hex + decimal, with highest/lowest summary.
+
+### Completed
+Built warmup_print_byte.c (void print function) and payload_decoder.c (loop +
+running max/min). Hit and fixed an integer-overflow bug: uint8_t lowest = 300
+wrapped to 44; fixed with UINT8_MAX. Compile now warning-free.
+
+### Files Created or Updated
+projects/c_day_03/warmup_print_byte.c
+projects/c_day_03/payload_decoder.c
+projects/c_day_03/README.md
+notes/c-payload-decoder-and-overflow.md
+
+### What I Learned
+- void = function that acts but returns nothing; #define = single-source constant.
+- Running min starts at UINT8_MAX, running max at 0 (mirror images).
+- uint8_t holds 0-255; assigning 300 silently wraps to 44 (overflow).
+- Compiler warnings catch silent bugs - a clean, warning-free compile is the goal.
+
+### Problems Faced
+Set lowest = 300, which overflowed a uint8_t to 44 (right answer by luck, wrong
+in general). Compiler warning flagged it; fixed with UINT8_MAX.
+
+### Confidence Level
+void functions and #define: 6/10
+running max/min pattern: 6/10
+integer overflow / type limits: 6/10
+reading compiler warnings: 6/10
