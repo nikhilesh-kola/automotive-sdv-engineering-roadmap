@@ -1283,3 +1283,35 @@ void functions and #define: 6/10
 running max/min pattern: 6/10
 integer overflow / type limits: 6/10
 reading compiler warnings: 6/10
+
+---
+
+## Week 5 · Thursday — Practical Lab 2
+
+### Today's Focus
+Convert raw CAN bytes to physical values in C: km/h, rpm, temperature, voltage.
+
+### Completed
+Wrote decode_speed, decode_temperature, decode_rpm (two bytes) and, as my own
+modification, decode_voltage returning float. Compiled with no warnings.
+Predicted the hex values by hand before running.
+
+### Files Created or Updated
+projects/c_day_04/signal_decoder.c
+projects/c_day_04/README.md
+notes/c-signal-decoding.md
+
+### What I Learned
+- physical = raw * scale + offset.
+- Two bytes combine as (high * 256) + low; one byte only reaches 255.
+- int would truncate 12.6 to 12; float keeps the decimal.
+- %.1f rounds the displayed float to one decimal place.
+
+### Problems Faced
+None. Voltage return type was chosen correctly first time.
+
+### Confidence Level
+scale and offset decoding: 7/10
+two-byte combine (high*256 + low): 7/10
+choosing return types: 7/10
+reading compiler output: 7/10
