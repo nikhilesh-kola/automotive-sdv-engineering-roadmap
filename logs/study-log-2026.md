@@ -1315,3 +1315,34 @@ scale and offset decoding: 7/10
 two-byte combine (high*256 + low): 7/10
 choosing return types: 7/10
 reading compiler output: 7/10
+
+---
+
+## Week 5 · Friday — Review
+
+### Today's Focus
+uint8_t/uint16_t, signed vs unsigned, overflow, and why they matter in ECUs.
+
+### Completed
+Created 10 flashcards and a review note. Ran the signed_vs_unsigned demo and
+got 255, -1, 0 as predicted. Reduced the week's rules to two ideas.
+
+### Files Created or Updated
+notes/flashcards/c-types-and-overflow-flashcards.md
+notes/c-types-overflow-review.md
+projects/c_day_05/signed_vs_unsigned.c
+
+### What I Learned
+- A type is a fixed number of bits, and the bits set the range.
+- The same bits read as unsigned or signed give different numbers (0xFF = 255 or -1).
+- Unsigned overflow wraps: 300 stored in a uint8_t becomes 44.
+- Arithmetic happens in int; the damage happens when storing into a small type.
+
+### Problems Faced
+Felt there were too many rules. Reduced them to two core ideas.
+
+### Confidence Level
+Type ranges: 6/10
+Signed vs unsigned reading: 6/10
+Overflow and wraparound: 6/10
+Explaining it without notes: 6/10
