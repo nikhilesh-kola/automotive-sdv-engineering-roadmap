@@ -1346,3 +1346,37 @@ Type ranges: 6/10
 Signed vs unsigned reading: 6/10
 Overflow and wraparound: 6/10
 Explaining it without notes: 6/10
+---
+
+## Week 5 · Saturday: Deep Project Lab
+
+### Today's Focus
+Multi-file C project: header files, 3 signal decoders plus voltage, frame table.
+
+### Completed
+Predicted 2D array values correctly. Built decoder.h, decoder.c, main.c, compiled
+with -Wall -Wextra with no warnings, output matched. Added decode_voltage in all
+three files. Fixed table formatting (field widths, unit in header only).
+
+### Files Created or Updated
+projects/c_day_06/warmup_frames.c
+projects/c_day_06/decoder.h
+projects/c_day_06/decoder.c
+projects/c_day_06/main.c
+projects/c_day_06/README.md
+notes/c-payload-decoder-project.md
+
+### What I Learned
+- 2D array frames[row][col] is one block of bytes, row after row.
+- .h declares, .c defines; the include guard prevents double declaration.
+- A new function in a multi-file project needs .h, .c and main.c changes.
+- %7.1f and %5d align columns; units belong in the header.
+
+### Problems Faced
+Table columns ran together and the unit was printed twice; fixed with widths.
+
+### Confidence Level
+2D arrays: 6/10
+header vs source files: 6/10
+compiling multiple files: 6/10
+formatting output with widths: 6/10
