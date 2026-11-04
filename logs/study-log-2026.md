@@ -1380,3 +1380,23 @@ Table columns ran together and the unit was printed twice; fixed with widths.
 header vs source files: 6/10
 compiling multiple files: 6/10
 formatting output with widths: 6/10
+
+---
+
+## Week 5 · Sunday: Weekly Test
+
+### Result
+77/100, pass. Part 1 21/25, Part 2 22/35, Part 3 18/20, Part 4/6 16/20.
+
+### What went well
+Debugging task: found all 3 bugs (missing semicolon, i <= 8, uint8_t total wrapping 393 to 137).
+Closed-book check: 4 of 5 right (0x3C = 60, 260 -> 4, 0x80 as int8_t = -128, 0x012C = 300).
+
+### What to improve
+- Hand-calculate expected values BEFORE running code.
+- Write answers in my own words, closed book.
+- Explain scanf's & as "needs the address to write into the real variable".
+- Learn what << 8 does (Week 6).
+
+### Next Focus
+Week 6: pointers, structs, bit operations.
