@@ -1400,3 +1400,34 @@ Closed-book check: 4 of 5 right (0x3C = 60, 260 -> 4, 0x80 as int8_t = -128, 0x0
 
 ### Next Focus
 Week 6: pointers, structs, bit operations.
+
+---
+
+## Week 6 · Monday: Theory 1
+
+### Today's Focus
+Pointers, addresses, dereferencing, arrays and pointers. Also a bits/bytes recap.
+
+### Completed
+Ran address_basics, pointer_read_write and array_and_pointer with -Wall -Wextra,
+no warnings. Predicted pointer_read_write's four lines (9, 9, 15, 0) before running.
+
+### Files Created
+projects/c_day_07/address_basics.c
+projects/c_day_07/pointer_read_write.c
+projects/c_day_07/array_and_pointer.c
+
+### What I Learned
+- A pointer holds an address. &x makes one, *p follows one.
+- C passes copies; passing &x lets a function change the caller's variable.
+- p + 1 moves one ELEMENT, not one byte: uint8_t steps of 1, uint16_t steps of 2.
+- 1 byte = 8 bits = 2 hex digits; 0x80 = 1000 0000; 0x2A = 0010 1010 = 42.
+
+### Problems Faced
+Some answers were too close to the lesson text. To redo in my own words.
+
+### Confidence Level
+Address and pointer idea (&, *): 6/10
+Passing a pointer to change a variable: 6/10
+Array name and pointer arithmetic: 6/10
+Bits, bytes, hex-to-binary: 6/10
