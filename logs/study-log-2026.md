@@ -1431,3 +1431,41 @@ Address and pointer idea (&, *): 6/10
 Passing a pointer to change a variable: 6/10
 Array name and pointer arithmetic: 6/10
 Bits, bytes, hex-to-binary: 6/10
+
+---
+
+## Week 6 · Tuesday: Theory 2
+
+### Today's Focus
+Structs, enums, typedef, and bitwise operators (& | ^ ~ << >>, masks).
+
+### Completed
+Ran struct_enum_basics, bitwise_basics, dtc_status_flags and struct_layout.
+Hand-calculated a & b, a | b, a ^ b and a >> 4 for 0xB4 and 0x0F; all matched.
+Measured struct layout on my machine: offsets 0, 4, 8, total size 12.
+
+### Files Created
+projects/c_day_08/struct_enum_basics.c
+projects/c_day_08/bitwise_basics.c
+projects/c_day_08/dtc_status_flags.c
+projects/c_day_08/struct_layout.c
+
+### What I Learned
+- Hex digit to bits: build each digit with 8-4-2-1 (C = 12 = 1100).
+- Bitwise ops on hex: convert to bits, apply per column, regroup into nibbles.
+- Four flag recipes: check value & MASK, set value | MASK,
+  clear value & ~MASK, toggle value ^ MASK.
+- status & 0x08: (write in my own words what this tells me about a DTC)
+- struct fields get padding for alignment: 1 + 4 + 2 = 7 bytes of fields, 12 bytes real.
+- 0xB4 << 1 stored in a uint8_t is 0x68, because the 9th bit is lost (wraparound again).
+- typedef gives a type a shorter name (VehicleSample instead of struct VehicleSample).
+
+### Problems Faced
+Did not know how to do bitwise operations on hex values, and didn't see why C = 1100.
+Fixed with the 8-4-2-1 method. Skipped two predictions; will cover the answers next time.
+
+### Confidence Level
+Hex to binary (8-4-2-1): 7/10
+AND / OR / NOT with masks: 7/10
+Testing a flag with & MASK: 7/10
+Structs, padding, typedef: 7/10
