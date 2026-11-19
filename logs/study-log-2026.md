@@ -1469,3 +1469,38 @@ Hex to binary (8-4-2-1): 7/10
 AND / OR / NOT with masks: 7/10
 Testing a flag with & MASK: 7/10
 Structs, padding, typedef: 7/10
+
+---
+
+## Week 6 · Wednesday: Practical Lab 1
+
+### Today's Focus
+CAN_Frame struct (id, dlc, data[8]), printing frames, frame validation.
+
+### Completed
+Built warmup_frame.c and can_frame.c. Added is_valid_frame (bool) and a fourth
+frame with dlc 9, which is rejected. Compiles with -Wall -Wextra, no warnings.
+
+### Files Created or Updated
+projects/c_day_09/warmup_frame.c
+projects/c_day_09/can_frame.c
+projects/c_day_09/README.md
+notes/c-can-frame-struct.md
+
+### What I Learned
+- Format specifiers choose hex or decimal display; the stored value is the same.
+- Loop over frame->dlc bytes, not all 8.
+- const pointer parameter: no copy, read-only.
+- Validate a frame before reading its data.
+- gcc ... && ./program avoids running a stale build.
+
+### Problems Faced
+Predicted the id would print in decimal. Missing comma between initializers
+caused a compile error, and the old .exe ran with stale output. Kept the old
+print loop by mistake, then removed it.
+
+### Confidence Level
+Defining and initializing structs: 7/10
+Pointer to struct (->, const): 7/10
+Validating data before use: 7/10
+Reading compiler errors: 6/10
